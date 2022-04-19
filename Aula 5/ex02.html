@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style type="text/css">
+        table{
+            border: none;
+        }
+        th, td{
+            border: 2px;
+            background-color: azure;
+            padding: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inscrição para aulas - Segunda</h2>
+    <!-- Tabela com aulas disponíveis -->
+    <h3>Aulas disponíveis</h3>
+    <table>
+        <td>
+            <th>Aulas disponíveis</th>
+            
+        </td>
+        <tr>
+            <td>8h - 9h</td>
+            <td>Linguagem de programação</td>
+        </tr>
+        <tr>
+            <td>9h - 10</td>
+            <td>Redes</td>
+        </tr>
+        <tr>
+            <td>10 - 11h</td>
+            <td>Desenvolvimento Web</td>
+        </tr>
+    </table><br>
+
+    <!-- Formulário com dados do aluno -->
+    <h3>Dados do aluno</h3>
+    <form action="http://www.teste.com/alunos.php">
+        <p>Nome completo:
+            <input type="text" name="nome" size="50" maxlength="50">
+        </p>
+        <p>Matrícula:
+            <input type="text" name="matricula" size="20" maxlength="10">
+        </p>
+        <p>E-mail:
+            <input type="email" name="email">
+        </p>
+        <p>Gênero:
+            <input type="radio" name="genero" value="Feminino">Feminino
+            <input type="radio" name="genero" value="Masculino">Masculino
+        </p><br>
+
+        <!-- Seleção das inscrições -->
+        <p>Selecione as aulas que possui interesse: <br>
+            <input type="checkbox" name="linguagem">Linguagem de programação <br>
+            <input type="checkbox" name="redes">Redes <br>
+            <input type="checkbox" name="web">Desenvolvimento Web <br>
+        </p>
+    <form>
+        <label for="campus_id">Selecione seu campus:</label><br>
+        <select name="campus" id="campus_if">
+            <optgroup label="São Paulo">
+                <option value="SP">Campus São Paulo</option>
+                <option value="Gru">Campus Guarulhos</option>
+                <option value="Campinas">Campus Campinas</option>
+                <option value="Salto">Campus Salto</option>
+            </optgroup>
+            <optgroup label="Rio de Janeiro">
+                <option value="RJ">Campus Rio de Janeiro</option>
+                <option value="Pinheiral">Campus Pinheiral</option>
+                <option value="Realengo">Campus Realengo</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!--Espaço para envio do comprovante de vacina-->
+
+    <h3>Comprovante de vacina</h3>
+    <form action="http://www.example.com/vacina.php">
+        <p>Adicione seu comprovante de vacina:</p>
+        <input type="file" name="vacina"><br><br>
+    </form>
+
+    <!--Botão de envio dos dados -->
+    <form action="http://www.example.com/subscribe.php">
+        <input type="submit" name="envio" value="Enviar">
+    </form>
+</body>
+</html>
