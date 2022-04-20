@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendário</title>
+    <style type="text/css">
+        table{
+            border: 2px;
+        }
+        th, td{
+            border: 2px;
+            background-color: azure;
+            padding: 5px;
+            width: 100px;
+            text-align: center;
+        }
+        .dom{
+            color: red;
+        }
+        .dias{
+            font-weight: bold;
+        }
+        #titulo{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr id="titulo">
+            <th rowspan="10">2<br>0<br>1<br>0</th>
+            <th colspan="7">Janeiro</th>
+        </tr>
+        <tr class="dias">
+            <td>D</td>
+            <td>S</td>
+            <td>T</td>
+            <td>Q</td>
+            <td>Q</td>
+            <td>S</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="dom">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td class="dom">10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td class="dom">17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td class="dom">24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td class="dom">31</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+</body>
+</html>
