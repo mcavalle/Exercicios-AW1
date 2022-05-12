@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     
     <title>Aula 6</title>
+
+    <style>
+        body{
+            display: grid;           
+        }
+        header, footer, article, nav{
+            padding: 2px;
+        }
+        #nav{
+            text-align: right;
+            margin-right: 20px;
+        }
+        #bike{
+            width: 500px;
+        }
+        #invite{
+            width: 300px;
+        }
+        #pageHeader{
+            grid-area: header;
+        }
+        #lado{
+            flex: 1;
+        }
+        p{
+            text-align: justify;
+        }
+    
+    </style>
 </head>
 <body>
-    <header id="cabecalho"><h1>Bologué</h1>
-        <nav>Home Destaque Arquivo</nav>
+    <header><h1>Bologué</h1>
+        <nav id="nav">Home Destaque Arquivo</nav>
     </header>
     <section>
         <h2>Últimos Posts</h2>
         <article>
             <h3>Neque porro quisquam est qui dolorem</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, cumque aliquid accusamus error eos ut rerum possimus! Nihil illo, cupiditate, suscipit harum incidunt, similique hic deserunt doloremque qui minus dolorem?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolor, accusantium, nemo dolorum ad dicta modi doloribus dignissimos nihil quod officiis eveniet aspernatur praesentium consequuntur nobis dolorem, porro laudantium possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis quidem ipsam fugiat inventore placeat reprehenderit eaque nulla at natus, cumque corrupti amet laboriosam, nostrum aliquid, ipsum autem reiciendis labore.</p>
-            <figure> <img src="bike.jpeg" alt="Biciclete">
+            <figure> <img src="bike.jpeg" alt="Bicicleta" id="bike">
                 <figcaption>Bicicleta</figcaption>
             </figure>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo soluta aliquam amet ad quis accusantium nihil nulla. Eveniet exercitationem quaerat ratione, commodi necessitatibus nihil eius quasi dignissimos. Sed, hic expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eveniet alias delectus omnis ea iusto tenetur reiciendis sit mollitia unde id ad, veniam perspiciatis adipisci. Quia explicabo necessitatibus rem reprehenderit?</p>
@@ -38,16 +67,18 @@
         </article>
     </section>
 
-    <aside id="lado">
-        <figure>
-            <img src="invite.webp" alt="convite" id="convite">
-        </figure> <br>
-        <h3>Links</h3>
-        <li>K19 treinamentos</li>
-        <li>Nylla tincidunt</li>
-        <li>Phasellus ullamcorper nibh</li>
+    <div id="lado">
+        <aside>
+            <figure>
+                <img src="invite.webp" alt="convite" id="invite">
+            </figure> <br>
+            <h3>Links</h3>
+            <li>K19 treinamentos</li>
+            <li>Nylla tincidunt</li>
+            <li>Phasellus ullamcorper nibh</li>
 
-    </aside>
+        </aside>
+    </div>
 
     <footer id="rodape">
         <p>
