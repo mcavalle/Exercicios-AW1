@@ -20,3 +20,16 @@ body{
 ul{
     padding: 0 0 0 40px;
 }
+
+ul li{
+    color: blue;
+}
+
+div + ul{
+    margin: 0 0 20px 0;
+}
+
+ul + p{
+    color: red;
+    font-style: italic;
+}
