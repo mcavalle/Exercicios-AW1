@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #ddd;
+}
+
+#conteudo{
+    border: 3px solid rgb(232, 238, 180);
+    width: 800px;
+    background-color: antiquewhite;
+}
+
+.cancelado{
+    text-decoration: line-through;
+}
+
+ul{
+    padding: 0 0 0 40px;
+}
